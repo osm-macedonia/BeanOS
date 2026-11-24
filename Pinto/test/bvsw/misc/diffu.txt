@@ -1,0 +1,21 @@
+--- work.txt	2026-10-01 18:10:31.198690340 +0200
++++ broken.txt	2026-10-01 18:10:31.204690308 +0200
+@@ -4,8 +4,18 @@
+ bin/toybox
+ dev
+ etc
++home
+ init
++lib
++lib64
++mnt
+ proc
+ root
++run
++sbin
+ sys
+ tmp
++usr
++usr/bin
++usr/sbin
++var

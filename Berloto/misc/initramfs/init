@@ -1,0 +1,29 @@
+#!/bin/sh
+
+# monkeydonia OS initramfs entrypoint
+# This script is the first userland program the kernel runs.
+
+export PATH=/bin:/sbin:/usr/bin:/usr/sbin
+
+mount -t proc proc /proc 2>/dev/null || true
+mount -t sysfs sys /sys 2>/dev/null || true
+mount -t devtmpfs devtmpfs /dev 2>/dev/null || true
+mkdir -p /dev/pts /dev/shm
+
+if [ ! -c /dev/console ]; then
+  mknod -m 600 /dev/console c 5 1 2>/dev/null || true
+fi
+
+echo "########################################" >/dev/console
+echo "Welcome to Monkeydonia OS" >/dev/console
+echo "########################################" >/dev/console
+
+echo "" >/dev/console
+
+if [ ! -x /bin/toybox ]; then
+  echo "ERROR: /bin/toybox is missing or not executable" >/dev/console
+  exec /bin/sh || exec /bin/busybox sh
+fi
+
+ln -sf /bin/toybox /bin/sh
+exec /bin/toybox sh

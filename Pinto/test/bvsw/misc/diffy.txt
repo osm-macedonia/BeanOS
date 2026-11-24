@@ -1,0 +1,21 @@
+.								.
+bin								bin
+bin/sh								bin/sh
+bin/toybox							bin/toybox
+dev								dev
+etc								etc
+							      >	home
+init								init
+							      >	lib
+							      >	lib64
+							      >	mnt
+proc								proc
+root								root
+							      >	run
+							      >	sbin
+sys								sys
+tmp								tmp
+							      >	usr
+							      >	usr/bin
+							      >	usr/sbin
+							      >	var

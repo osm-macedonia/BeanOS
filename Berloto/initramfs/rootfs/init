@@ -1,0 +1,12 @@
+#!/bin/sh
+
+export PATH=/bin:/sbin:/usr/bin:/usr/sbin
+
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -t devtmpfs devtmpfs /dev
+
+echo "Welcome to Berloto!"
+echo "Development shell ready."
+
+exec /bin/toybox sh

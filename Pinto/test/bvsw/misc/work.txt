@@ -1,0 +1,11 @@
+.
+bin
+bin/sh
+bin/toybox
+dev
+etc
+init
+proc
+root
+sys
+tmp

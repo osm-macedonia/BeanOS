@@ -1,0 +1,14 @@
+/home/gregors/Desktop/projects/BeansOS/kidney/glibc/glibc-build/dummy.o: \
+ /home/gregors/Desktop/projects/BeansOS/kidney/glibc/glibc-build/dummy.c \
+ ../include/stdc-predef.h \
+ /home/gregors/Desktop/projects/BeansOS/kidney/glibc/glibc-build/libc-modules.h \
+ ../include/libc-symbols.h ../include/libc-misc.h \
+ /home/gregors/Desktop/projects/BeansOS/kidney/glibc/glibc-build/config.h \
+ ../sysdeps/generic/libc-symver.h ../sysdeps/generic/symbol-hacks.h
+../include/stdc-predef.h:
+/home/gregors/Desktop/projects/BeansOS/kidney/glibc/glibc-build/libc-modules.h:
+../include/libc-symbols.h:
+../include/libc-misc.h:
+/home/gregors/Desktop/projects/BeansOS/kidney/glibc/glibc-build/config.h:
+../sysdeps/generic/libc-symver.h:
+../sysdeps/generic/symbol-hacks.h:
