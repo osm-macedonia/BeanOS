@@ -2,6 +2,7 @@
 
 # Bean OS initramfs entrypoint
 # This script is the first userland program the kernel runs.
+clear
 
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin
 
